@@ -1,43 +1,35 @@
-# Dataset Information
-
-## Dataset Used
-
-### Anime Face Dataset
+Dataset Information
+Datasets Used
+1. Anime Face Dataset
 
 Source:
 https://www.kaggle.com/datasets/splcher/animefacedataset
 
-The Anime Face Dataset was used as the primary dataset for training the GAN models in this project. The dataset contains anime-style character face images collected for generative modeling tasks.
+Purpose:
 
-## Dataset Purpose
+Primary dataset for Vanilla GAN and DCGAN training.
+Contains clean anime face images suitable for generative modeling.
 
-The dataset is used to train Generative Adversarial Networks (GANs) capable of generating realistic anime character faces. It serves as the foundation for Vanilla GAN, DCGAN, and Conditional GAN experiments conducted during the project.
+Applications:
 
-## Dataset Characteristics
+GAN training
+DCGAN training
+Image generation experiments
+2. SafeBooru Dataset
 
-* Image Type: Anime character faces
-* Format: JPG/PNG images
-* Color Space: RGB
-* Domain: Anime face generation
+Source:
+https://www.kaggle.com/datasets/alamson/safebooru
 
-## Preprocessing Performed
+Purpose:
 
-The following preprocessing steps were applied before training:
+Used for extracting visual attribute labels.
+Supports Conditional GAN (cGAN) training through tagged anime images.
 
-1. Image loading and verification.
-2. Resizing images to a fixed resolution suitable for training.
-3. Conversion to RGB format where necessary.
-4. Normalization of pixel values to the range [-1, 1].
-5. Removal of corrupted or unreadable images.
-6. Organization of images into a structured dataset directory.
+Applications:
 
-## Dataset Labeling
-
-For Conditional GAN experiments, images may be labeled using simple visual attributes such as:
-
-* Hair Color
-
-  * Black Hair
+Hair color labeling
+Eye color labeling
+Conditional image generation
   * Blonde Hair
   * Brown Hair
   * Blue Hair
