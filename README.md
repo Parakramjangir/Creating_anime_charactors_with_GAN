@@ -1,61 +1,114 @@
 # Anime Character Generation using GANs
 
+## Seasons of Code 2026 - IIT Bombay
+
+**Student:** Parakram Jangir (25B3926)
+
+**Mentor:** Utkarsh Tanwar
+
+---
+
 ## Project Overview
 
-This project is being developed as part of IIT Bombay Seasons of Code under the mentorship of Utkarsh Tanwar.
+This project aims to generate anime-style character faces using Generative Adversarial Networks (GANs). The project progresses from understanding basic GAN concepts to implementing Deep Convolutional GANs (DCGANs) and Conditional GANs (cGANs) for controlled anime face generation.
 
-The objective is to generate anime character faces using Generative Adversarial Networks (GANs). The project progresses from understanding basic GANs to implementing Deep Convolutional GANs (DCGANs) and Conditional GANs (cGANs) for controllable anime face generation.
+The primary objective is to train models capable of learning the distribution of anime face datasets and generating realistic synthetic anime characters.
 
-## Progress So Far
+---
+
+## Project Roadmap
 
 ### Week 1: GAN Fundamentals
 
 * Studied GAN architecture
 * Understood Generator and Discriminator networks
-* Learned adversarial training process
-* Explored GAN variants including DCGAN, WGAN, StyleGAN and CycleGAN
+* Learned adversarial training and minimax optimization
+* Explored various GAN architectures including DCGAN, WGAN, StyleGAN, and CycleGAN
 
 ### Week 2: Vanilla GAN
 
-* Worked with Anime Face Dataset
+* Worked with the Anime Face Dataset
 * Implemented and trained a basic GAN
-* Observed generated anime face outputs
-* Analyzed common GAN training challenges
+* Generated anime faces from random latent vectors
+* Analyzed GAN training behavior
 
-### Week 3: DCGAN and Dataset Preparation
+### Week 3: Dataset Preprocessing and DCGAN
 
-* Preprocessed anime datasets
-* Learned image normalization techniques
-* Studied dataset labeling strategies
-* Implemented DCGAN architecture
-* Evaluated generated outputs
+* Performed image preprocessing and normalization
+* Studied dataset labeling techniques
+* Implemented Deep Convolutional GAN (DCGAN)
+* Compared performance with Vanilla GAN
 
-### Week 4: Conditional GAN
+### Week 4: Conditional GAN (cGAN)
 
 * Studied Conditional GAN architecture
-* Learned label-based image generation
-* Prepared labeled datasets for future training
-* Implemented cGAN framework
+* Learned label-conditioned image generation
+* Prepared datasets for attribute-based generation
+* Explored controlled anime face synthesis
+
+---
+
+## Repository Structure
+
+```text
+.
+├── README.md
+├── docs
+│   ├── week-1.md
+│   ├── week-2.md
+│   ├── week-3.md
+│   └── week-4.md
+│
+├── dataset
+│   └── dataset_info.md
+│
+├── src
+│   ├── vanilla_gan
+│   ├── dcgan
+│   └── cgan
+│
+└── results
+```
 
 ## Dataset
 
-Anime Face Dataset:
+### Anime Face Dataset
+
 https://www.kaggle.com/datasets/splcher/animefacedataset
 
-Additional labeled datasets:
+### SafeBooru Dataset
+
 https://www.kaggle.com/datasets/alamson/safebooru
+
+---
+
+## Technologies Used
+
+* Python
+* PyTorch
+* NumPy
+* Pandas
+* Matplotlib
+* OpenCV
+* Jupyter Notebook
+
+---
+
+## Results
+
+Training outputs and generated anime face samples will be uploaded in the `results` directory.
+
+---
 
 ## Future Work
 
-* Improve image quality
-* Train larger conditional models
-* Experiment with advanced GAN architectures
-* Generate anime characters based on user-specified attributes
+* Improve image quality and training stability
+* Train larger Conditional GAN models
+* Generate anime faces using user-defined attributes
+* Explore advanced architectures such as StyleGAN
 
-## Mentor
+---
 
-Utkarsh Tanwar
+## Acknowledgements
 
-## Author
-
-Parakram Jangir (25B3926)
+This project is being developed under the IIT Bombay Seasons of Code program with guidance from mentor Utkarsh Tanwar.
