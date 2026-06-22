@@ -1,33 +1,93 @@
-# Week2.md
-
-# Week 2: Vanilla GAN on Anime Face Dataset
+# Week 2 - Vanilla GAN on Anime Face Dataset
 
 ## Objective
 
-The objective of this week was to train a basic GAN on an anime face dataset and understand the practical aspects of GAN training.
+Implement and train a basic Generative Adversarial Network (GAN) on an anime face dataset to understand the adversarial training process.
 
-## What I Learned
+## Dataset
 
-* Loading and preprocessing image datasets.
-* Training a vanilla GAN architecture.
-* Monitoring generator and discriminator performance.
-* Visualizing generated outputs during training.
+Dataset Used:
+https://www.kaggle.com/datasets/splcher/animefacedataset
 
-## Implementation
+Total Images: 63,565
 
-* Downloaded and explored the Anime Face Dataset.
-* Prepared images for GAN training.
-* Implemented and trained a vanilla GAN.
-* Generated anime face samples from random noise vectors.
+## Preprocessing
 
-## Results
+- Loaded anime face images using a custom PyTorch Dataset class.
+- Resized images to 64 × 64.
+- Converted images to RGB format.
+- Normalized pixel values to the range [-1, 1].
+- Created DataLoader with batch size 64.
 
-* Successfully trained a basic GAN on anime face images.
-* Generated synthetic anime faces with recognizable facial structures.
-* Observed improvements in image quality over training epochs.
+## GAN Architecture
+
+### Generator
+
+- Input: 100-dimensional latent vector
+- Fully connected layers:
+  - 100 → 256
+  - 256 → 512
+  - 512 → 1024
+  - 1024 → 64×64×3
+- Activation:
+  - ReLU
+  - Tanh
+
+### Discriminator
+
+- Input: 64×64×3 image
+- Fully connected layers:
+  - 64×64×3 → 1024
+  - 1024 → 512
+  - 512 → 256
+  - 256 → 1
+- Activation:
+  - LeakyReLU
+  - Sigmoid
+
+## Training
+
+Loss Function:
+- Binary Cross Entropy Loss (BCELoss)
+
+Optimizer:
+- Adam
+- Learning Rate = 0.0002
+
+Training Epochs:
+- 5
+
+### Training Logs
+
+Epoch 1:
+D Loss = 0.0305
+G Loss = 5.9383
+
+Epoch 2:
+D Loss = 0.3800
+G Loss = 2.7611
+
+Epoch 3:
+D Loss = 0.0366
+G Loss = 4.1899
+
+Epoch 4:
+D Loss = 0.6249
+G Loss = 2.0049
+
+Epoch 5:
+D Loss = 1.1666
+G Loss = 2.4351
+
+## Outcomes
+
+- Successfully implemented a Vanilla GAN using PyTorch.
+- Trained on the Anime Face Dataset.
+- Generated synthetic anime face samples.
+- Observed adversarial training behavior between Generator and Discriminator.
 
 ## Challenges
 
-* Training instability.
-* Balancing generator and discriminator learning.
-* Limited image quality due to the simplicity of the vanilla GAN architecture.
+- Understanding dataset structure on Kaggle.
+- Implementing a custom dataset loader.
+- Interpreting GAN training losses.
