@@ -48,28 +48,6 @@ The primary objective is to train models capable of learning the distribution of
 
 ---
 
-## Repository Structure
-
-```text
-.
-├── README.md
-├── docs
-│   ├── week-1.md
-│   ├── week-2.md
-│   ├── week-3.md
-│   └── week-4.md
-│
-├── dataset
-│   └── dataset_info.md
-│
-├── src
-│   ├── vanilla_gan
-│   ├── dcgan
-│   └── cgan
-│
-└── results
-```
-
 ## Dataset
 
 ### Anime Face Dataset
