@@ -1,32 +1,56 @@
-# Week4.md
+# Week 4 - Conditional GAN (cGAN)
 
-# Week 4: Conditional GAN (cGAN)
+## Idea
 
-## Objective
+A Conditional GAN allows controlled generation by adding label information.
 
-The objective of this week was to understand Conditional GANs and prepare for controlled anime character generation using attribute labels.
+Instead of:
+G(z) → image
 
-## What I Learned
+We use:
+G(z, y) → image
 
-* Conditional image generation.
-* Incorporating labels into Generator and Discriminator networks.
-* Label-guided synthesis of anime faces.
-* Differences between standard GANs and Conditional GANs.
+Where:
+- z = noise vector
+- y = condition (hair color, eye color, etc.)
 
-## Implementation
+Discriminator also becomes:
+D(x, y) → real or fake
 
-* Studied the Conditional GAN architecture.
-* Explored methods for integrating attribute labels into the training process.
-* Prepared labeled datasets for conditional image generation.
-* Reviewed implementation resources and training strategies for cGANs.
+## Why this is useful
 
-## Results
+Unlike vanilla GANs, cGAN allows:
+- Controlled image generation
+- Better structured outputs
+- More realistic attribute consistency
 
-* Developed an understanding of controllable image generation.
-* Prepared the groundwork for generating anime characters based on specific attributes such as hair color and eye color.
+ ## Architecture Change
 
-## Challenges
+### Generator
+Input:
+- Noise vector (z)
+- Label vector (y)
 
-* Dataset labeling and balancing.
-* Designing effective conditioning mechanisms.
-* Increased model complexity compared to standard GANs.
+Output:
+- Generated image conditioned on y
+
+### Discriminator
+Input:
+- Image (x)
+- Label (y)
+
+Output:
+- Probability real/fake
+
+## Dataset Preparation Idea
+
+To train a cGAN, images must have labels such as:
+
+- hair_color: black, blonde, pink, blue
+- eye_color: brown, green, red
+
+Example:
+image_001 → blue_hair + green_eyes
+image_002 → black_hair + brown_eyes
+
+These labels allow conditional generation.
