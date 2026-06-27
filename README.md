@@ -91,10 +91,6 @@ README.md
 
 Used for Vanilla GAN and DCGAN implementation.
 
-### SafeBooru Dataset
-
-Planned for future experiments involving attribute-conditioned anime face generation.
-
 ### MNIST Dataset
 
 Used for implementing and understanding Conditional GANs (cGAN).
