@@ -117,6 +117,8 @@ Generated samples for each implementation are available in the **results/** dire
 * DCGAN
 * Conditional GAN (MNIST)
 
+---
+
 ## Sample Outputs
 
 ### Vanilla GAN
