@@ -20,26 +20,35 @@ The primary objective is to understand how GANs learn image distributions and ge
 ## Repository Structure
 
 ```text
-dataset/
-    dataset_info.md
-
-docs/
-    week-1.md
-    week-2.md
-    week-3.md
-    week-4.md
-
-results/
-    vanilla_gan/
-    dcgan/
-    cgan_mnist/
-
-src/
-    vanilla_gan/
-    dcgan/
-    cgan_mnist/
-
-README.md
+Creating_anime_characters_with_GAN/
+│
+├── datasets/
+│   └── dataset_info.md         
+│
+├── docs/
+│   ├── week-1.md                
+│   ├── week-2.md                
+│   ├── week-3.md                
+│   └── week-4.md                
+│
+├── results/
+│   ├── vanilla_gan/
+│   │   └── vanilla_gan_generated_samples.png
+│   ├── dcgan/
+│   │   └── dcgan_generated_samples.png
+│   └── cgan_mnist/
+│       └── cgan_mnist_generated_samples.png
+│
+├── src/
+│   ├── vanilla_gan/
+│   │   └── vanilla_gan.ipynb
+│   ├── dcgan/
+│   │   └── dcgan.ipynb
+│   └── cgan_mnist/
+│       └── cgan_mnist.ipynb
+│
+├── README.md
+└── requirements.txt
 ```
 
 ---
