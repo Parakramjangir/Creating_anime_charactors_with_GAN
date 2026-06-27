@@ -117,6 +117,17 @@ Generated samples for each implementation are available in the **results/** dire
 * DCGAN
 * Conditional GAN (MNIST)
 
+## Sample Outputs
+
+### Vanilla GAN
+![Vanilla GAN](results/vanilla_gan/vanilla_gan_generated_samples.png)
+
+### DCGAN
+![DCGAN](results/dcgan/dcgan_generated_samples.png)
+
+### Conditional GAN (MNIST)
+![cGAN](results/cgan_mnist/cgan_mnist_generated_samples.png)
+
 ---
 
 ## Future Work
