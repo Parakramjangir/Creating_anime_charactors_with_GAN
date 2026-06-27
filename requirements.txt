@@ -1,0 +1,11 @@
+```text
+torch
+torchvision
+numpy
+pandas
+matplotlib
+opencv-python
+tqdm
+Pillow
+jupyter
+```
