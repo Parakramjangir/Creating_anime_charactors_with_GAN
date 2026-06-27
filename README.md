@@ -111,8 +111,7 @@ Used for implementing and understanding Conditional GANs (cGAN).
 
 ## Results
 
-Generated samples for each implementation are available in the **results/** directory.
-
+Generated samples for each implementation.
 * Vanilla GAN
 * DCGAN
 * Conditional GAN (MNIST)
