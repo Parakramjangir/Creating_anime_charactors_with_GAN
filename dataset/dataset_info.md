@@ -17,21 +17,3 @@ Applications:
 * GAN training
 * DCGAN training
 * Image generation experiments
-
----
-
-### 2. SafeBooru Dataset
-
-Source:
-https://www.kaggle.com/datasets/alamson/safebooru
-
-Purpose:
-
-* Used for extracting visual attribute labels.
-* Supports Conditional GAN (cGAN) training through tagged anime images.
-
-Applications:
-
-* Hair color labeling
-* Eye color labeling
-* Conditional image generation
