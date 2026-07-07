@@ -51,8 +51,8 @@ Used to implement and understand **Conditional Generative Adversarial Networks (
 
 ## 3. SafeBooru Dataset
 
-**Source:** SafeBooru Dataset
-**Platform:** Kaggle
+**Source:** 
+https://www.kaggle.com/datasets/alamson/safebooru
 
 ### Description
 
