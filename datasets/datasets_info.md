@@ -54,6 +54,10 @@ Used to implement and understand **Conditional Generative Adversarial Networks (
 **Source:** SafeBooru Dataset
 **Platform:** Kaggle
 
+### Description
+
+An anime-style image dataset containing tagged character images with diverse poses, clothing, and visual attributes. In this project, it is used to create a filtered full-body anime character subset for training a Conditional DCGAN.
+
 ### Purpose
 
 For the final stage of the project, the SafeBooru dataset is used for full-body anime character generation using a Conditional DCGAN.
