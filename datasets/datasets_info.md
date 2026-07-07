@@ -46,3 +46,25 @@ Used to implement and understand **Conditional Generative Adversarial Networks (
 * Conditional GAN (cGAN) training
 * Label-conditioned image generation
 * Controlled image synthesis
+
+---
+
+##3. SafeBooru Dataset
+   Source: Kaggle SafeBooru Dataset
+
+Description
+A large anime-style image dataset containing tagged character illustrations from SafeBooru. Unlike the Anime Face Dataset, this dataset includes more diverse images such as full-body characters, different poses, clothing styles, backgrounds, and visual attributes. The tags available with the images can be used to create labelled data for Conditional GAN training.
+
+Purpose
+Creating a labelled full-body anime character dataset
+Training the Conditional GAN / Conditional DCGAN
+Generating anime characters based on selected labels
+Moving from face-only generation to full-body character generation
+
+Applications
+Full-body anime character generation
+Conditional GAN training
+Label-controlled image synthesis
+Anime image generation experiments
+Dataset filtering using tags
+
