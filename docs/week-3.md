@@ -1,5 +1,3 @@
-# Week3.md
-
 # Week 3: Dataset Preprocessing, Labelling and DCGAN
 
 ## Objective
