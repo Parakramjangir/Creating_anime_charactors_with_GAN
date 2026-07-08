@@ -1,4 +1,4 @@
-# Week 2 : Vanilla GAN on Anime Face Dataset
+# Week 2: Vanilla GAN on Anime Face Dataset
 
 ## Objective
 
