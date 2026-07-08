@@ -1,4 +1,4 @@
-# Week 4 – Conditional GAN (cGAN)
+# Week 4: Conditional GAN (cGAN)
 
 ## Objective
 
