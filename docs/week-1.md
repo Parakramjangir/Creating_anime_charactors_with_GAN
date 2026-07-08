@@ -1,5 +1,3 @@
-# Week1.md
-
 # Week 1: Introduction to Generative Adversarial Networks (GANs)
 
 ## Objective
