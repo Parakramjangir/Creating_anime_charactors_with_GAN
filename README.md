@@ -197,17 +197,6 @@ The final Conditional DCGAN successfully demonstrates the transition from uncond
 
 ---
 
-## Future Work
-
-* Create manually verified labels such as hair color or eye color
-* Train Conditional GANs with cleaner semantic labels
-* Improve image quality and training stability
-* Experiment with Wasserstein GAN
-* Explore StyleGAN and StyleGAN2
-* Build a simple web app for interactive anime face generation
-
----
-
 ## Acknowledgements
 
 This project was developed as part of **Seasons of Code 2026** at **IIT Bombay** under the guidance of **Utkarsh Tanwar**.
