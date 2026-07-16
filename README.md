@@ -50,6 +50,10 @@ Creating_anime_characters_with_GAN/
 │       ├── epoch_010.png
 │       ├── epoch_015.png
 │       └── epoch_020.png
+│       └── epoch_025.png
+│       └── epoch_030.png
+│       └── epoch_035.png
+│       └── epoch_040.png
 │
 ├── src/
 │   ├── vanilla_gan/
